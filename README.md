@@ -17,7 +17,7 @@ How to configure the XCache server itself.
 How to test your XCache server is up and running.
 
 ## Step3
-[Smoothing Traffic in/out of your XCache server](docs/xcace_server_traffic_smoothing.md)
+[Smoothing Traffic in/out of your XCache server](docs/xcache_server_traffic_smoothing.md)
 How to smooth the traffic in/out of your XCache server.
 
 ## Step4
