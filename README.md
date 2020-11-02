@@ -1,8 +1,7 @@
 # XCache_Testing_Fun
 A repo with instructions for setting up a transparent XCache at a WLCG-Tier2 for fun, if you can make a profit using it, even better...
 
-
-Written by a sysadmin who doesn't have the time to learn how to debug/build/trace/fix/develop production services, targetting other sysadmins.
+Written by a sysadmin who is a member of the GridPP Storage group, targetting other sysadmins.
 
 ## Step0
 [Setting Up some hardware for an XCache server](docs/xcache_hardware_requirements.md)
