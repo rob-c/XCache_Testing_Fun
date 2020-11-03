@@ -10,8 +10,7 @@ This server makes use of 24GB of RAM for ZFS caching.
 
 You will need to mount the storage you intend to use for caching as a POSIX filesystem. It is unknown if any non-POSIX filesystem can be successfully used for this.
 
-It is not yet known if there is an optimal block/record size in configuring the filesystem/partitions. This will be investigated.
-
+If you're able to configure your block size (or recordsize in ZFS) make sure the number matches: `pfc.blocksize 1M` in your xcache config for best performance.
 
 ### Opaque XCache
 
