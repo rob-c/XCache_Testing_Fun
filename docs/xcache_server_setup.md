@@ -5,6 +5,8 @@
 
 [Here be Old Instructions](xcache_server_setup_old.md)
 
+Most of these new instructions are similar to https://cloud-pg.github.io/CachingOnDemand/BARE/ but I've updated this to include some additional fixes and suggestions for hosting an xcache for gridpp.
+
 ## Setting up the XCache via SystemD
 
 ### Setup the host to support XRootD with grid X509 authentication
@@ -26,11 +28,10 @@ To have SystemD integration with the XCache service you will need to use a confi
 The example below is from a new XCache server which has been launched at ECDF:
  * Cached Data located at: `/gridstorage/cache/`
  * Create a secure token for this instance: `sec.protocol sss -s /etc/grid-security/xrd/sss.keytab.grp -c /etc/grid-security/xrd/sss.keytab.grp`
- * Copy the host certificate
+ * Copy the host certificate so the cache service user can access it `mkdir -p /etc/grid-security/xrootd; cp /etc/grid-security/*.pem /etc/grid-security/xrootd`
  * Change ownership: `chown -R xrootd:xrootd /gridstorage/cache/`
  * Change ownership: `chown -R xrootd:xrootd /etc/grid-security/xrd`
  * Change ownership: `chown -R xrootd:xrootd /etc/grid-security/xrootd`
-
 
 `/etc/xrootd/xrootd-gridppXCache.cfg`:
 ```
