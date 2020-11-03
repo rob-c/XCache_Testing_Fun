@@ -128,7 +128,7 @@ Environment=XRD_LOGLEVEL=Debug
 To enable and start the service with systemd: `systemctl enable --now xrootd@gridppXCache`
 
 
-# CmsD Service
+### CmsD Service
 
 If you so chose you can also setup the same for `cmsd`. For this I would still recommend  the above overrides as use the service name `cmsd@gridppXCache`
 
@@ -140,4 +140,6 @@ Add an appropriate firewall rule into your iptables and ip6tables to allow exter
 -A INPUT -p tcp -m tcp --dport 1094 -j ACCEPT -m comment --comment "allow xrootd"
 ```
 
+## RUCIO Support
 
+There is an outstanding action to investigate adding support for rucioN2N in the XCache: https://github.com/wyang007/rucioN2N-for-Xcache
